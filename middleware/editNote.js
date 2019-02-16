@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../data/dbConfig');
+const db = require('../helpers/helpers');
 
 router.put('/:id', (req, res) => {
   const id = req.params.id;

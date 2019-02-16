@@ -8,7 +8,7 @@ const createNote = require('./createNote');
 const editNote = require('./editNote');
 const notes = require('./notes');
 const db = require('../data/dbConfig');
-const dbLogin = require('../data/dbConfigLogin')
+const dbLogin = require('../data/dbConfig')
 const { authenticate } = require('./authenticate');
 
 const secret = secretHidingPlace.jwtKey;
