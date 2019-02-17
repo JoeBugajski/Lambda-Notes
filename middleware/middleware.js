@@ -85,7 +85,6 @@ function login(req, res) {
 module.exports = server => {
   server.use(express.json());
   server.use(cors());
-  server.use(morgan('dev'));
   server.post('/api/login', login);
   server.post('/api/register', register);
   server.use('/api/create', authenticate, createNote);

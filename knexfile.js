@@ -8,7 +8,7 @@ const localPg = {
 };
 const dbConnection = process.env.DATABASE_URL || localPg;
 module.exports = {
-
+  dbConnection,
   development: {
     client: 'sqlite3',
     connection: {
