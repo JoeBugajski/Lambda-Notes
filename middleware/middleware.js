@@ -2,12 +2,10 @@ const secretHidingPlace = require('../secrets/keys')
 const express = require('express');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const morgan = require('morgan');
 const cors = require('cors');
 const createNote = require('./createNote');
 const editNote = require('./editNote');
 const notes = require('./notes');
-const db = require('../data/dbConfig');
 const dbLogin = require('../data/dbConfig')
 const { authenticate } = require('./authenticate');
 
