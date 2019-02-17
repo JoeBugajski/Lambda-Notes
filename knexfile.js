@@ -19,12 +19,12 @@ module.exports = {
       directory: './data/migrations',
       tablename: 'dbmigrations',
     },
-    seeds: { directory: './data/seeds'}
+    seeds: { directory: './data/seeds/development'}
   },
 
   production: {
     client: 'pg',
-    connection: dbConnection,
+    connection: process.env.DATABASE_URL,
     pool: {
       min: 2,
       max: 10,
@@ -34,7 +34,7 @@ module.exports = {
       directory: './data/migrations',
     },
     seeds: {
-      directory: './data/seeds'
+      directory: './data/seeds/production'
     }
   },
 };
